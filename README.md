@@ -11,5 +11,6 @@ In the WEB_INF/lib you will also find AspectJ files that this interceptor uses:
 * aspectjtools-1.9.6.jar
 
 You also need to modify Wildfly startup by adding the following to the VM arguments:
+```
 -Djboss.modules.system.pkgs=org.jboss.byteman,org.jboss.logmanager -Djava.util.logging.manager=org.jboss.logmanager.LogManager -javaagent:c:\apache-tomcat-7.0.94\lib\aspectjweaver-1.9.6.jar
-
+```
